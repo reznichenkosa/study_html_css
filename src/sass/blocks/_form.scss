@@ -1,0 +1,35 @@
+.feed-form {
+    margin-top: 36px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    input {
+        width: 300px;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        color: #4b4b4b;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0 15px;
+        margin: 10px 0;
+        border: none;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+#consultation-form label {
+    color: #fff;
+}
+
+input.error {
+    border: 2px red solid;
+}
+
+@media (max-width: 991px) {
+    .feed-form {
+        margin: 36px auto 0;
+    }
+}

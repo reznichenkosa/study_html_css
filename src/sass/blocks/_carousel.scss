@@ -1,0 +1,35 @@
+.carousel {
+    padding: 81px 0;
+    &__inner {
+        position: relative;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    .slider__control {
+        background: none;
+        &[data-slide=prev] {
+            left: -70px;
+            &::before {
+                height: 50px;
+                width: 31px;
+                background: url('../../icons/left.png') center (center/cover) no-repeat;
+            }
+        }
+        &[data-slide=next] {
+            right: -70px;
+            &::before {
+                width: 31px;
+                height: 50px;
+                background: url('../../icons/right.png') center (center/cover) no-repeat;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .carousel {
+        .slider__control {
+            display: none;
+        }
+    }
+}
